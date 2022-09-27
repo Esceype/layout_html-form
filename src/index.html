@@ -13,7 +13,8 @@
 
   <body>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+    method="post">
 
       <fieldset class="form__field"> 
         <legend>Personal information</legend>
@@ -112,13 +113,13 @@
         <legend>An interesting fact about you!</legend>
         
         <div class="form__item">
-          <label for="choose">Do you love cats?</label>
+          <label for="chosenYes chosenNo">Do you love cats?</label>
           <input 
             class="input"
             type="radio" 
             name="choose" 
             value="yes"
-            id="choose"
+            id="chosenYes"
           >
           Yes
           <input 
@@ -126,6 +127,7 @@
             type="radio" 
             name="choose" 
             value="no"
+            id="chosenNo"
           >
           No
         </div>
@@ -159,9 +161,9 @@
             class="noScroll" 
             id="autoChoose"
           >
-            <option>BMW</option>
-            <option>Audi</option>
-            <option>Lada</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Lada">Lada</option>
           </select>
         </div>
         
